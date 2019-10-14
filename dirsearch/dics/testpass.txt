@@ -1,0 +1,7 @@
+phpinfo.php
+info.php
+/
+html
+/hot
+hot
+search

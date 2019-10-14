@@ -1,0 +1,10 @@
+/phpinfo.php
+/phpmyadmin/
+/intraAdmin/phpmyadmin/
+/bbs/phpmyadmin/
+/admin/phpmyadmin/
+/phpMyAdmin-3.4.2-all-languages
+//keditor
+//ckeditor
+/keditor
+/ckeditor
