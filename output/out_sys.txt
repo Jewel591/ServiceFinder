@@ -1,0 +1,1 @@
+# Hydra v9.0 run at 2019-10-14 17:40:29 on pop.cjia.com ssh (hydra -L ../dic/ftp-user.txt -P ../dic/ftp-pass.txt -o ../output/out_sys.txt ssh://pop.cjia.com:22)

